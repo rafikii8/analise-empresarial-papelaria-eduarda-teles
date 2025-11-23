@@ -1,0 +1,107 @@
+body {
+    margin: 0;
+    font-family: "Arial", sans-serif;
+    background: #ffffff;
+}
+
+/* Topo */
+.topo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #E98FB5;
+    padding: 15px 30px;
+}
+
+.logo {
+    height: 70px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+/* Seções */
+.secao {
+    padding: 50px 20px;
+    max-width: 900px;
+    margin: auto;
+}
+
+.fundo-rosa-claro {
+    background: #F7D4E3;
+}
+
+h2 {
+    color: #E98FB5;
+    font-size: 2rem;
+}
+
+ul li {
+    margin-bottom: 8px;
+}
+
+/* GRID 2 COLUNAS */
+.grid-2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+    margin-top: 20px;
+}
+
+/* Caixas */
+.box {
+    background: white;
+    padding: 20px;
+    border: 2px solid #E98FB5;
+    border-radius: 10px;
+}
+
+/* Placeholder da imagem */
+.image-placeholder {
+    text-align: center;
+    border: 2px dashed #E98FB5;
+}
+
+/* Imagem da equipe: ocupar toda a largura do box e manter altura uniforme */
+.image-placeholder img,
+.team-photo {
+    width: 100%;
+    height: 220px; /* altura fixa para uniformidade; ajuste conforme preferir */
+    object-fit: cover; /* preserva a proporção e recorta o excedente */
+    display: block;
+    border-radius: 8px;
+}
+
+/* Responsivo */
+@media (max-width: 750px) {
+    .grid-2 {
+        grid-template-columns: 1fr;
+    }
+
+    nav ul {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .logo {
+        height: 55px;
+    }
+}
+
+/* Rodapé */
+footer {
+    background: #E98FB5;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 40px;
+}
